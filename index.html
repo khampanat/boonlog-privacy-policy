@@ -5,81 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - BoonLog</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        .container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .header { text-align: center; border-bottom: 2px solid #1A237E; padding-bottom: 20px; margin-bottom: 30px; }
-        .logo { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; }
-        h1 { color: #1A237E; font-size: 24px; }
-        h2 { color: #455A64; font-size: 20px; margin-top: 30px; border-left: 4px solid #1A237E; padding-left: 10px; }
-        p, li { font-size: 15px; }
-        .lang-switch { text-align: right; margin-bottom: 20px; }
-        .en-section { margin-top: 50px; padding-top: 30px; border-top: 1px dashed #ccc; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
+        .container { background: #fff; padding: 50px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .header { text-align: center; border-bottom: 2px solid #1A237E; padding-bottom: 30px; margin-bottom: 40px; }
+        .logo { width: 80px; height: 80px; border-radius: 20px; margin-bottom: 15px; }
+        h1 { color: #1A237E; font-size: 26px; margin-bottom: 10px; }
+        h2 { color: #283593; font-size: 20px; margin-top: 35px; border-left: 5px solid #1A237E; padding-left: 15px; background: #f8f9ff; padding-top: 5px; padding-bottom: 5px; }
+        p, li { font-size: 15px; color: #555; }
+        ul { padding-left: 20px; }
+        strong { color: #333; }
+        .en-section { margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee; }
+        .footer { text-align: center; font-size: 13px; color: #999; margin-top: 50px; }
+        .badge { display: inline-block; background: #E8EAF6; color: #1A237E; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-bottom: 5px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="header">
-        <!-- ปรับพาธรูปภาพให้ตรงกับที่เก็บใน GitHub เช่น https://yourusername.github.io/repo/logo.png -->
-        <img src="logo.png" alt="BoonLog Logo" class="logo">
+        <img src="https://boonlogapp.web.app/logo.png" alt="BoonLog Logo" class="logo">
         <h1>นโยบายความเป็นส่วนตัว / Privacy Policy</h1>
         <p>แอปพลิเคชัน บุญล็อก (BoonLog)</p>
     </div>
 
     <!-- Thai Version -->
     <section>
-        <h2>1. การเก็บรวบรวมข้อมูล</h2>
-        <p>แอปพลิเคชัน BoonLog จะเก็บรวบรวมข้อมูลที่จำเป็นเพื่อการให้บริการดังนี้:</p>
+        <span class="badge">ภาษาไทย</span>
+        <p>แอปพลิเคชัน BoonLog ให้ความสำคัญกับความเป็นส่วนตัวของคุณ ข้อมูลทั้งหมดที่จัดเก็บมีวัตถุประสงค์เพื่อความโปร่งใสทางการเงินภายในองค์กรหรือกลุ่มของคุณเท่านั้น</p>
+
+        <h2>1. ข้อมูลที่เราเก็บรวบรวม</h2>
         <ul>
-            <li><strong>ข้อมูลระบุตัวตน:</strong> อีเมล และชื่อที่แสดง (Display Name) จากการเข้าสู่ระบบผ่าน Google</li>
-            <li><strong>ข้อมูลการใช้งาน:</strong> บันทึกรายรับ-รายจ่าย, ชื่อโครงการ, และรูปภาพหลักฐาน (สลิป/โลโก้) ที่ผู้ใช้เลือกอัปโหลด</li>
-            <li><strong>ข้อมูลทางเทคนิค:</strong> รุ่นของอุปกรณ์ และข้อมูลข้อผิดพลาด (Crash Logs) เพื่อใช้ในการปรับปรุงแอป</li>
+            <li><strong>ข้อมูลบัญชี:</strong> อีเมล, ชื่อที่แสดง (Display Name) และตำแหน่งหน้าที่ ที่ได้จาก Google Sign-In หรือการกรอกข้อมูลเพิ่มเติม</li>
+            <li><strong>ข้อมูลทางการเงิน:</strong> บันทึกรายรับ-รายจ่าย, วัตถุประสงค์, วันที่ และรูปภาพหลักฐาน (สลิป)</li>
+            <li><strong>ข้อมูลองค์กร:</strong> ชื่อกองทุน/โครงการ, ที่อยู่ และโลโก้</li>
+            <li><strong>ข้อมูลชีวมาตร (Biometrics):</strong> แอปมีการเข้าถึงระบบสแกนลายนิ้วมือเพื่อยืนยันตัวตน <strong>โดยข้อมูลนี้จะถูกประมวลผลภายในเครื่องของคุณเท่านั้น ไม่มีการส่งข้อมูลลายนิ้วมือขึ้นสู่เซิร์ฟเวอร์</strong></li>
         </ul>
 
-        <h2>2. การใช้งานข้อมูล</h2>
-        <p>เราใช้ข้อมูลของคุณเพื่อ:</p>
+        <h2>2. การรักษาความปลอดภัยและการเข้ารหัส (Encryption)</h2>
+        <p>เราใช้เทคโนโลยีระดับสูงในการปกป้องข้อมูลของคุณ:</p>
         <ul>
-            <li>จัดการระบบสมาชิกและสิทธิ์การเข้าถึงสมุดบัญชี (Admin/User)</li>
-            <li>สรุปยอดและแสดงผลรายงานทางการเงินภายในกลุ่มของคุณ</li>
-            <li>ดำเนินการระบบสมาชิก Premium ผ่าน Google Play Billing</li>
+            <li><strong>ข้อมูลส่วนบุคคล:</strong> ชื่อและตำแหน่งของคุณจะถูกเข้ารหัสด้วยกุญแจส่วนตัว (Unique User Key) ก่อนส่งขึ้นฐานข้อมูล</li>
+            <li><strong>ข้อมูลบัญชี:</strong> รายละเอียดในสมุดบัญชีจะถูกเข้ารหัสแยกตามรหัสสมุดบัญชี (Fund-based Encryption)</li>
+            <li><strong>มาตรฐานสากล:</strong> ข้อมูลทั้งหมดถูกจัดเก็บบนระบบ <strong>Google Firebase</strong> ที่มีความปลอดภัยระดับโลก</li>
         </ul>
 
-        <h2>3. การรักษาความปลอดภัย</h2>
-        <p>ข้อมูลชื่อและที่อยู่บางส่วนจะถูกเข้ารหัส (Encryption) ก่อนจัดเก็บลงฐานข้อมูล Cloud และเราใช้บริการของ <strong>Google Firebase</strong> ซึ่งเป็นมาตรฐานสากลในการจัดเก็บข้อมูลอย่างปลอดภัย</p>
+        <h2>3. การใช้งานและการแบ่งปันข้อมูล</h2>
+        <ul>
+            <li>ข้อมูลจะถูกแสดงผลเฉพาะสมาชิกที่ได้รับอนุมัติในสมุดบัญชีเดียวกันเท่านั้น</li>
+            <li>ระบบมีการสร้าง QR Code เพื่อให้บุคคลภายนอกสแกนตรวจสอบความถูกต้องของรายงานได้ตามหลักความโปร่งใส</li>
+            <li>เราไม่มีการขายหรือส่งต่อข้อมูลของคุณให้กับบุคคลที่สามเพื่อวัตถุประสงค์ทางการค้า</li>
+        </ul>
 
-        <h2>4. การลบข้อมูล</h2>
-        <p>ผู้ใช้สามารถลบรายการบันทึกได้เองภายในแอป หรือหากต้องการลบบัญชีและข้อมูลทั้งหมดถาวร สามารถติดต่อผู้พัฒนาได้ทางอีเมลในหน้าจัดการแอปบน Play Store</p>
+        <h2>4. การลบข้อมูลและบัญชี</h2>
+        <p>คุณมีสิทธิ์ในการจัดการข้อมูลของคุณ:</p>
+        <ul>
+            <li>ลบรายการบันทึกรายตัวได้ทันทีผ่านแอปพลิเคชัน</li>
+            <li>หากต้องการลบบัญชีและข้อมูลทั้งหมดถาวร สามารถส่งคำขอได้ที่อีเมลผู้พัฒนาในหน้าข้อมูลแอปบน Play Store</li>
+        </ul>
     </section>
 
     <!-- English Version -->
     <section class="en-section">
-        <h1>Privacy Policy (English)</h1>
+        <span class="badge">English</span>
+        <h1>Privacy Policy</h1>
+        <p>BoonLog is committed to protecting your privacy. This policy outlines how we handle your data to ensure financial transparency and security.</p>
         
-        <h2>1. Information Collection</h2>
-        <p>BoonLog collects essential information to provide our services:</p>
+        <h2>1. Information We Collect</h2>
         <ul>
-            <li><strong>Identity Data:</strong> Email and Display Name via Google Sign-In.</li>
-            <li><strong>User Content:</strong> Income/Expense records, organization details, and images (slips/logos) uploaded by the user.</li>
-            <li><strong>Technical Data:</strong> Device model and crash reports for performance improvement.</li>
+            <li><strong>Account Data:</strong> Email address, display name, and position/role obtained via Google Sign-In or user input.</li>
+            <li><strong>Financial Records:</strong> Income and expense logs, purposes, dates, and evidence images (slips).</li>
+            <li><strong>Fund Details:</strong> Organization names, addresses, and logos.</li>
+            <li><strong>Biometric Data:</strong> The app uses fingerprint authentication for secure access. <strong>Biometric data is processed locally on your device and is never transmitted to our servers.</strong></li>
         </ul>
 
-        <h2>2. Use of Information</h2>
-        <p>We use your data to:</p>
+        <h2>2. Data Security & Encryption</h2>
+        <p>We implement robust security measures:</p>
         <ul>
-            <li>Manage account memberships and roles (Admin/User).</li>
-            <li>Generate financial reports and dashboards within your assigned funds.</li>
-            <li>Process Premium subscriptions via Google Play Billing.</li>
+            <li><strong>Personal Encryption:</strong> Display names and positions are encrypted using unique user-specific keys.</li>
+            <li><strong>Database Security:</strong> All records are stored on <strong>Google Firebase</strong> with end-to-end industry-standard security protocols.</li>
+            <li><strong>Fund Isolation:</strong> Data is accessible only to authorized members of each specific fund.</li>
         </ul>
 
-        <h2>3. Data Security</h2>
-        <p>Sensitive fields like names and addresses are encrypted before being stored on <strong>Google Firebase</strong> servers, ensuring industry-standard security for your financial data.</p>
+        <h2>3. Data Usage</h2>
+        <ul>
+            <li>Your data is used solely to provide financial reporting and membership management features.</li>
+            <li>The app generates QR codes for public verification to support community transparency.</li>
+            <li>We do not sell or share your personal information with third parties for marketing purposes.</li>
+        </ul>
 
-        <h2>4. Data Deletion</h2>
-        <p>Users can delete their records within the app. For permanent account and data deletion requests, please contact the developer via the support email listed on the Play Store.</p>
+        <h2>4. Your Rights & Data Deletion</h2>
+        <ul>
+            <li>Users can delete individual records directly within the app.</li>
+            <li>To request permanent account and data deletion, please contact our support team via the email provided on the Google Play Store listing.</li>
+        </ul>
     </section>
 
-    <div class="header" style="border: none; margin-top: 40px;">
-        <p style="font-size: 12px; color: #999;">Last Updated: May 2024</p>
+    <div class="footer">
+        <p>Last Updated: May 16, 2026</p>
+        <p>© 2024 BoonLog Application. All rights reserved.</p>
     </div>
 </div>
 
