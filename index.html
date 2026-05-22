@@ -17,6 +17,7 @@
         .en-section { margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee; }
         .footer { text-align: center; font-size: 13px; color: #999; margin-top: 50px; }
         .badge { display: inline-block; background: #E8EAF6; color: #1A237E; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-bottom: 5px; }
+        .highlight { color: #D32F2F; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -35,32 +36,31 @@
 
         <h2>1. ข้อมูลที่เราเก็บรวบรวม</h2>
         <ul>
-            <li><strong>ข้อมูลบัญชี:</strong> อีเมล, ชื่อที่แสดง (Display Name) และตำแหน่งหน้าที่ ที่ได้จาก Google Sign-In หรือการกรอกข้อมูลเพิ่มเติม</li>
+            <li><strong>ข้อมูลบัญชี:</strong> อีเมล, ชื่อที่แสดง และตำแหน่งหน้าที่ ที่ได้จาก Google Sign-In หรือการสมัครสมาชิก</li>
             <li><strong>ข้อมูลทางการเงิน:</strong> บันทึกรายรับ-รายจ่าย, วัตถุประสงค์, วันที่ และรูปภาพหลักฐาน (สลิป)</li>
-            <li><strong>ข้อมูลองค์กร:</strong> ชื่อกองทุน/โครงการ, ที่อยู่ และโลโก้</li>
-            <li><strong>ข้อมูลชีวมาตร (Biometrics):</strong> แอปมีการเข้าถึงระบบสแกนลายนิ้วมือเพื่อยืนยันตัวตน <strong>โดยข้อมูลนี้จะถูกประมวลผลภายในเครื่องของคุณเท่านั้น ไม่มีการส่งข้อมูลลายนิ้วมือขึ้นสู่เซิร์ฟเวอร์</strong></li>
+            <li><strong>ข้อมูลชีวมาตร (Biometrics):</strong> แอปมีการใช้ระบบสแกนลายนิ้วมือเพื่อความสะดวกในการเข้าใช้งาน <strong>โดยข้อมูลนี้จะถูกประมวลผลภายในเครื่องของคุณเท่านั้น ไม่มีการส่งข้อมูลลายนิ้วมือขึ้นสู่เซิร์ฟเวอร์</strong></li>
         </ul>
 
-        <h2>2. การรักษาความปลอดภัยและการเข้ารหัส (Encryption)</h2>
-        <p>เราใช้เทคโนโลยีระดับสูงในการปกป้องข้อมูลของคุณ:</p>
+        <h2>2. การรักษาความปลอดภัยขั้นสูง (Zero-Knowledge Encryption)</h2>
+        <p>เราใช้เทคโนโลยีการเข้ารหัสที่แม้แต่ <strong>"ผู้พัฒนาแอปก็ไม่สามารถอ่านข้อมูลของคุณได้"</strong>:</p>
         <ul>
-            <li><strong>ข้อมูลส่วนบุคคล:</strong> ชื่อและตำแหน่งของคุณจะถูกเข้ารหัสด้วยกุญแจส่วนตัว (Unique User Key) ก่อนส่งขึ้นฐานข้อมูล</li>
-            <li><strong>ข้อมูลบัญชี:</strong> รายละเอียดในสมุดบัญชีจะถูกเข้ารหัสแยกตามรหัสสมุดบัญชี (Fund-based Encryption)</li>
-            <li><strong>มาตรฐานสากล:</strong> ข้อมูลทั้งหมดถูกจัดเก็บบนระบบ <strong>Google Firebase</strong> ที่มีความปลอดภัยระดับโลก</li>
+            <li><strong>การเข้ารหัสที่เครื่องผู้ใช้ (Client-Side Encryption):</strong> ชื่อผู้มอบเงิน, ที่อยู่ และหมายเหตุ จะถูกเข้ารหัสด้วยกุญแจส่วนตัว (Unique User Key) จากเครื่องของคุณก่อนส่งขึ้นฐานข้อมูล</li>
+            <li><strong>ความเป็นส่วนตัวของสมาชิก:</strong> สมาชิกคนอื่นและผู้ดูแลกลุ่ม (Admin) จะเห็นเฉพาะยอดเงินและรูปหลักฐาน แต่จะไม่เห็นชื่อหรือหมายเหตุส่วนตัวของคุณ (จะแสดงเป็น [ข้อมูลส่วนบุคคล]) เว้นแต่คุณจะยินยอมเปิดเผยผ่านรายงาน PDF</li>
+            <li><strong>มาตรฐานสากล:</strong> ข้อมูลถูกจัดเก็บบน <strong>Google Firebase</strong> ที่ได้รับการรับรองความปลอดภัยระดับโลก</li>
         </ul>
 
         <h2>3. การใช้งานและการแบ่งปันข้อมูล</h2>
         <ul>
-            <li>ข้อมูลจะถูกแสดงผลเฉพาะสมาชิกที่ได้รับอนุมัติในสมุดบัญชีเดียวกันเท่านั้น</li>
-            <li>ระบบมีการสร้าง QR Code เพื่อให้บุคคลภายนอกสแกนตรวจสอบความถูกต้องของรายงานได้ตามหลักความโปร่งใส</li>
-            <li>เราไม่มีการขายหรือส่งต่อข้อมูลของคุณให้กับบุคคลที่สามเพื่อวัตถุประสงค์ทางการค้า</li>
+            <li>ข้อมูลจะถูกแสดงผลเฉพาะสมาชิกที่ได้รับอนุมัติให้เข้าร่วมสมุดบัญชีเดียวกันเท่านั้น</li>
+            <li>ระบบมีการสร้าง QR Code เพื่อตรวจสอบความแท้จริงของรายงานดิจิทัล แต่จะปกปิดชื่อผู้จัดทำรายงานไว้ในระบบฐานข้อมูล</li>
+            <li><strong>ไม่มีการขายข้อมูล:</strong> เราไม่มีนโยบายขายหรือส่งต่อข้อมูลส่วนบุคคลของคุณให้กับบุคคลที่สามอย่างเด็ดขาด</li>
         </ul>
 
-        <h2>4. การลบข้อมูลและบัญชี</h2>
-        <p>คุณมีสิทธิ์ในการจัดการข้อมูลของคุณ:</p>
+        <h2>4. สิทธิ์ของคุณและการลบบัญชี (Right to be Forgotten)</h2>
+        <p>คุณสามารถจัดการข้อมูลของคุณได้โดยตรง:</p>
         <ul>
-            <li>ลบรายการบันทึกรายตัวได้ทันทีผ่านแอปพลิเคชัน</li>
-            <li>หากต้องการลบบัญชีและข้อมูลทั้งหมดถาวร สามารถส่งคำขอได้ที่อีเมลผู้พัฒนาในหน้าข้อมูลแอปบน Play Store</li>
+            <li><strong>ลบบัญชีด้วยตัวเอง:</strong> คุณสามารถกดปุ่ม "ลบบัญชีและข้อมูลส่วนตัว" ได้ทันทีในหน้าตั้งค่าโปรไฟล์</li>
+            <li><span class="highlight">เงื่อนไขการลบ:</span> เพื่อรักษาความถูกต้องของระบบบัญชีส่วนรวม คุณจะลบบัญชีได้ก็ต่อเมื่อ <strong>ไม่มีประวัติการบันทึกรายการเงินค้างอยู่ในระบบ</strong> หากคุณเคยบันทึกรายการไว้ ข้อมูลจะถูกเก็บรักษาเพื่อใช้เป็นหลักฐานความโปร่งใสของกลุ่มต่อไป</li>
         </ul>
     </section>
 
@@ -68,40 +68,39 @@
     <section class="en-section">
         <span class="badge">English</span>
         <h1>Privacy Policy</h1>
-        <p>BoonLog is committed to protecting your privacy. This policy outlines how we handle your data to ensure financial transparency and security.</p>
+        <p>BoonLog is dedicated to protecting your privacy. Our system is built on the principle of "Financial Transparency with Personal Privacy."</p>
         
         <h2>1. Information We Collect</h2>
         <ul>
-            <li><strong>Account Data:</strong> Email address, display name, and position/role obtained via Google Sign-In or user input.</li>
-            <li><strong>Financial Records:</strong> Income and expense logs, purposes, dates, and evidence images (slips).</li>
-            <li><strong>Fund Details:</strong> Organization names, addresses, and logos.</li>
-            <li><strong>Biometric Data:</strong> The app uses fingerprint authentication for secure access. <strong>Biometric data is processed locally on your device and is never transmitted to our servers.</strong></li>
+            <li><strong>Account Data:</strong> Email, display name, and role obtained via Google Sign-In or registration.</li>
+            <li><strong>Financial Records:</strong> Transaction logs, dates, and evidence images (slips).</li>
+            <li><strong>Biometrics:</strong> Fingerprint access is processed <strong>locally on your device only. We never collect or store your biometric data on our servers.</strong></li>
         </ul>
 
-        <h2>2. Data Security & Encryption</h2>
-        <p>We implement robust security measures:</p>
+        <h2>2. Advanced Security (Zero-Knowledge Encryption)</h2>
+        <p>We implement encryption so robust that <strong>"Even the developers cannot read your private details"</strong>:</p>
         <ul>
-            <li><strong>Personal Encryption:</strong> Display names and positions are encrypted using unique user-specific keys.</li>
-            <li><strong>Database Security:</strong> All records are stored on <strong>Google Firebase</strong> with end-to-end industry-standard security protocols.</li>
-            <li><strong>Fund Isolation:</strong> Data is accessible only to authorized members of each specific fund.</li>
+            <li><strong>User-Specific Keys:</strong> Sensitive fields like names, addresses, and notes are encrypted on your device using a unique key before being uploaded.</li>
+            <li><strong>Privacy by Design:</strong> Other members and group Admins see transaction amounts and proof of payment for transparency but cannot see your private names or notes (displayed as [Private Data]) unless you choose to share them via PDF.</li>
+            <li><strong>Infrastructure:</strong> All data is secured on <strong>Google Firebase</strong> with industry-standard encryption protocols.</li>
         </ul>
 
-        <h2>3. Data Usage</h2>
+        <h2>3. Data Sharing & Usage</h2>
         <ul>
-            <li>Your data is used solely to provide financial reporting and membership management features.</li>
-            <li>The app generates QR codes for public verification to support community transparency.</li>
-            <li>We do not sell or share your personal information with third parties for marketing purposes.</li>
+            <li>Your data is shared only with authorized members of your specific account book.</li>
+            <li>The system generates QR codes for digital report verification while keeping the creator's identity encrypted in the database.</li>
+            <li><strong>No Third-Party Sharing:</strong> We never sell or share your data for marketing purposes.</li>
         </ul>
 
-        <h2>4. Your Rights & Data Deletion</h2>
+        <h2>4. Your Rights & Self-Service Deletion</h2>
         <ul>
-            <li>Users can delete individual records directly within the app.</li>
-            <li>To request permanent account and data deletion, please contact our support team via the email provided on the Google Play Store listing.</li>
+            <li><strong>Delete Account:</strong> You can permanently erase your account and profile data directly via the "Delete Account" button in the Profile settings.</li>
+            <li><span class="highlight">Accounting Integrity:</span> To maintain financial audit trails, account deletion is only permitted if you have <strong>no existing transaction history</strong> in the system. If you have recorded transactions, your identity associated with those records remains preserved for group transparency.</li>
         </ul>
     </section>
 
     <div class="footer">
-        <p>Last Updated: May 16, 2026</p>
+        <p>Last Updated: May 22, 2026</p>
         <p>© 2026 BoonLog Application. All rights reserved.</p>
     </div>
 </div>
