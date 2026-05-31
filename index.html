@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - BoonLog</title>
+    <title>Privacy Policy & Account Deletion - BoonLog</title>
     <style>
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
         .container { background: #fff; padding: 50px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
@@ -19,6 +19,7 @@
         .badge { display: inline-block; background: #E8EAF6; color: #1A237E; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-bottom: 5px; }
         .highlight { color: #D32F2F; font-weight: bold; }
         .contact-info { background: #fff9c4; padding: 15px; border-radius: 8px; border: 1px solid #fbc02d; margin-top: 20px; }
+        .deletion-box { background: #ffebee; padding: 20px; border-radius: 8px; border: 1px solid #ffcdd2; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -26,7 +27,7 @@
 <div class="container">
     <div class="header">
         <img src="https://khampanat.github.io/boonlog-privacy-policy/logo.png" alt="BoonLog Logo" class="logo">
-        <h1>นโยบายความเป็นส่วนตัว / Privacy Policy</h1>
+        <h1>นโยบายความเป็นส่วนตัวและการขอลบข้อมูล<br>Privacy Policy & Account Deletion</h1>
         <p>แอปพลิเคชัน บุญล็อก (BoonLog)</p>
     </div>
 
@@ -39,8 +40,8 @@
         <ul>
             <li><strong>ข้อมูลบัญชี:</strong> อีเมล, ชื่อที่แสดง และตำแหน่งหน้าที่ ที่ได้จากระบบ Google Login หรือการสมัครสมาชิก</li>
             <li><strong>ข้อมูลทางการเงิน:</strong> บันทึกรายรับ-รายจ่าย, วัตถุประสงค์, วันที่ และรูปภาพหลักฐาน (สลิป)</li>
-            <li><strong>ข้อมูลเชิงเทคนิค:</strong> เราใช้บริการ Firebase (Analytics และ Crashlytics) เพื่อเก็บข้อมูลการใช้งานและข้อผิดพลาดของแอปแบบไม่ระบุตัวตน เพื่อนำมาปรับปรุงเสถียรภาพของแอป</li>
-            <li><strong>ข้อมูลชีวมาตร (Biometrics):</strong> แอปมีการใช้ระบบสแกนลายนิ้วมือเพื่อความปลอดภัย <strong>ข้อมูลนี้จะถูกประมวลผลภายในเครื่องของคุณเท่านั้น ไม่มีการส่งข้อมูลลายนิ้วมือออกนอกอุปกรณ์</strong></li>
+            <li><strong>ข้อมูลเชิงเทคนิค:</strong> เราใช้บริการ Firebase (Analytics และ Crashlytics) เพื่อเก็บข้อมูลการใช้งานและข้อผิดพลาดของแอปแบบไม่ระบุตัวตน</li>
+            <li><strong>ข้อมูลชีวมาตร (Biometrics):</strong> ประมวลผลภายในเครื่องของคุณเท่านั้น ไม่มีการส่งออกนอกอุปกรณ์</li>
         </ul>
 
         <h2>2. ระบบความปลอดภัยและการเข้ารหัสขั้นสูง</h2>
@@ -49,18 +50,16 @@
             <li><strong>ความปกปิดต่อผู้พัฒนา:</strong> ผู้พัฒนาไม่สามารถเข้าถึงรายละเอียดทางการเงินส่วนบุคคลที่ถูกเข้ารหัสไว้ได้ (Zero-Knowledge)</li>
         </ul>
 
-        <h2>3. การใช้งานและการแบ่งปันข้อมูล</h2>
-        <ul>
-            <li>ข้อมูลจะถูกใช้งานเพื่อการแสดงรายงานภายในกลุ่มที่คุณเป็นสมาชิกเท่านั้น</li>
-            <li><strong>ไม่มีการขายข้อมูล:</strong> เราไม่มีการขายหรือแบ่งปันข้อมูลส่วนบุคคลของคุณให้กับบุคคลที่สามเพื่อวัตถุประสงค์ทางการค้า</li>
-            <li>เราอาจแบ่งปันข้อมูลเชิงเทคนิคกับบริการของ Google (เช่น Firebase) เพื่อการทำงานที่สมบูรณ์ของแอป</li>
-        </ul>
-
-        <h2>4. สิทธิ์ของคุณและการลบบัญชี</h2>
-        <ul>
-            <li><strong>ลบบัญชีด้วยตัวเอง:</strong> คุณสามารถกดปุ่ม "ลบบัญชีและข้อมูลส่วนตัว" ได้ทันทีในหน้าตั้งค่าโปรไฟล์</li>
-            <li><span class="highlight">เงื่อนไขการลบ:</span> หากมีประวัติการทำรายการเงินในระบบ ข้อมูลดังกล่าวจะถูกเก็บรักษาไว้เพื่อรักษาความถูกต้องของระบบบัญชีส่วนรวมตามหลักความโปร่งใส</li>
-        </ul>
+        <h2 id="delete-account-th">3. การลบบัญชีและข้อมูล (Account Deletion)</h2>
+        <div class="deletion-box">
+            <p>ผู้ใช้แอปพลิเคชัน <strong>BoonLog</strong> สามารถขอลบบัญชีและข้อมูลส่วนบุคคลได้ทุกเมื่อตามขั้นตอนดังนี้:</p>
+            <ul>
+                <li><strong>ขั้นตอนที่ 1 (ภายในแอป):</strong> ล็อกอินเข้าสู่แอป > ไปที่เมนู "ตั้งค่า" (Profile) > กดปุ่ม "ลบบัญชีและข้อมูลส่วนตัว" ระบบจะทำการลบข้อมูลโปรไฟล์และอีเมลของท่านออกจากฐานข้อมูลทันที</li>
+                <li><strong>ขั้นตอนที่ 2 (กรณีลบแอปไปแล้ว):</strong> หากท่านไม่ได้ติดตั้งแอปไว้ในเครื่อง สามารถแจ้งขอลบข้อมูลได้โดยส่งอีเมลมาที่ <a href="mailto:doxgie.dev@gmail.com">doxgie.dev@gmail.com</a> โดยระบุหัวข้อว่า "ขอลบข้อมูลบัญชี BoonLog" พร้อมแนบอีเมลที่ใช้สมัคร</li>
+            </ul>
+            <p><strong>ข้อมูลที่จะถูกลบ:</strong> อีเมล, ชื่อผู้ใช้งาน, ตำแหน่ง, รูปโปรไฟล์ และประวัติการเข้าใช้งาน</p>
+            <p><strong>ข้อมูลที่อาจถูกเก็บรักษา:</strong> ข้อมูลบันทึกทางการเงินที่ท่านได้บันทึกไว้ในสมุดบัญชีส่วนรวมจะถูกเก็บรักษาไว้เพื่อรักษาความถูกต้องและความโปร่งใสของประวัติบัญชี (Audit Trail) ตามวัตถุประสงค์หลักของแอป</p>
+        </div>
 
         <div class="contact-info">
             <strong>ติดต่อเรา:</strong> หากมีคำถามเกี่ยวกับนโยบายนี้ โปรดติดต่อผู้พัฒนาได้ที่อีเมล: <a href="mailto:doxgie.dev@gmail.com">doxgie.dev@gmail.com</a>
@@ -77,27 +76,20 @@
         <ul>
             <li><strong>Account Data:</strong> Email, display name, and role via Google Login or Registration.</li>
             <li><strong>Financial Records:</strong> Transaction logs, dates, and evidence images.</li>
-            <li><strong>Technical Data:</strong> We use Firebase Services (Analytics & Crashlytics) to collect anonymous usage and crash reports for performance improvement.</li>
-            <li><strong>Biometrics:</strong> Fingerprint data is processed <strong>locally on your device only.</strong> No biometric data is ever transmitted or stored on our servers.</li>
+            <li><strong>Technical Data:</strong> Firebase Analytics & Crashlytics for performance improvement.</li>
+            <li><strong>Biometrics:</strong> Fingerprint data is processed <strong>locally on your device only.</strong></li>
         </ul>
 
-        <h2>2. Security & Encryption</h2>
-        <ul>
-            <li><strong>Encryption at Source:</strong> Sensitive fields are encrypted on your device before being uploaded.</li>
-            <li><strong>Zero-Knowledge:</strong> Encrypted data is unreadable by app developers or unauthorized third parties.</li>
-        </ul>
-
-        <h2>3. Data Usage</h2>
-        <ul>
-            <li>Your data is used solely for reporting and membership management within your specific group.</li>
-            <li><strong>No Data Selling:</strong> We never sell your personal information to third parties for marketing.</li>
-        </ul>
-
-        <h2>4. Data Deletion & Rights</h2>
-        <ul>
-            <li><strong>Self-Service Deletion:</strong> You can permanently erase your profile via the "Delete Account" button in settings.</li>
-            <li><span class="highlight">Integrity Note:</span> Identity associated with accounting records is preserved if transaction history exists to maintain financial audit trails.</li>
-        </ul>
+        <h2 id="delete-account-en">2. Account Deletion & Data Removal</h2>
+        <div class="deletion-box">
+            <p><strong>BoonLog</strong> users can request the deletion of their accounts and associated data through the following methods:</p>
+            <ul>
+                <li><strong>Method 1 (In-App):</strong> Login to the app > Go to "Settings" (Profile) > Tap "Delete Account & Privacy Data". This will immediately remove your profile and email from our servers.</li>
+                <li><strong>Method 2 (Email Request):</strong> If you have uninstalled the app, you may request data deletion by emailing <a href="mailto:doxgie.dev@gmail.com">doxgie.dev@gmail.com</a>. Please provide the email address used for the account.</li>
+            </ul>
+            <p><strong>Data that will be deleted:</strong> Email, Display Name, Position, Profile Image, and Session history.</p>
+            <p><strong>Data that may be retained:</strong> Transactional financial records previously recorded in shared account books will be preserved to maintain accounting integrity and transparency (Audit Trail).</p>
+        </div>
 
         <div class="contact-info">
             <strong>Contact Us:</strong> For privacy inquiries, please contact: <a href="mailto:doxgie.dev@gmail.com">doxgie.dev@gmail.com</a>
